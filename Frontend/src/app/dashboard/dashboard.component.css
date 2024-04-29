@@ -1,0 +1,39 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-heading {
+    text-align: center;
+  }
+  
+  .dashboard-description {
+    color: #777;
+    text-align: center;
+  }
+  
+  .dropdown-container {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dashboard-table th, .dashboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .pagination-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination-container button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
