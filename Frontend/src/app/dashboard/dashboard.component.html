@@ -1,4 +1,12 @@
-<div class="dashboard-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="dashboard-container">
     <h1 class="dashboard-heading">Inactivated Site Info</h1>
     <p class="dashboard-description">Recently inactivated test sites (SSA and ESSA)</p>
     
@@ -32,13 +40,15 @@
     </table>
   
     <div class="pagination-container">
-        <button [disabled]="currentPage === 1" (click)="prevPage()">Previous</button>
-        <span>
+      <button [disabled]="currentPage === 1" (click)="prevPage()">Previous</button>
+      <span>
           <button *ngFor="let page of getPageNumbers()" (click)="goToPage(page)">
-            {{ page === '...' ? '...' : page }}
+              {{ page }}
           </button>
-        </span>
-        <button [disabled]="currentPage === totalPages" (click)="nextPage()">Next</button>
-    </div>
+      </span>
+      <button [disabled]="currentPage === totalPages" (click)="nextPage()">Next</button>
   </div>
+  </div>
+</body>
+</html>
   
