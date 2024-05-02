@@ -1,0 +1,137 @@
+body {
+  /* margin-top: -15px; */
+  /* background-color: #f2f2f2; */
+}
+
+header {
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 85px; /* Adjust the width of the logo as needed */
+  height: auto;
+  margin-right: 20px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.navigation a:hover {
+  color: blue; /* Hover color */
+}
+
+.title {
+  text-align: center; /* Center align the text */
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.dashboard-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+select {
+  font-size: 13px;
+  padding: 3.5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+  
+  .pagination-container {
+    margin-top: 17px;
+    text-align: center;
+  }
+
+  .pagination-container button {
+    border: none;
+    background: none;
+    color: blue;
+    cursor: pointer;
+    margin: 0 4px;
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .pagination-container button:hover {
+    text-decoration: underline;
+  }
+  
+  .pagination-container button[disabled] {
+    color: #999;
+    cursor: not-allowed;
+  }
+
+  .footer{
+    margin-top: 65px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  

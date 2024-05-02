@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1 class="dashboard-heading">Inactivated Site Info</h1>
+    <p class="dashboard-description">The test sites (SSA and ESSA) have been inactive for the past two months.</p>
+    
+    <div class="dropdown-container">
+      <label for="siteType">Select Site Type: </label>
+      <select id="siteType" [(ngModel)]="selectedSiteType" (change)="onSiteTypeChange()">
+        <option value="ESSA">ESSA</option>
+        <option value="SSA">SSA</option>
+      </select>
+    </div>
+  
+    <table class="dashboard-table">
+      <thead>
+        <tr>
+          <th>Sr No.</th>
+          <th>Program Code</th>
+          <th>Test Center Name</th>
+          <th>Test Center Flag</th>
+          <th>Date Inactivated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let site of displayedSites">
+          <td>{{ site.srNo }}</td>
+          <td>{{ site.programCode }}</td>
+          <td>{{ site.testCenterName }}</td>
+          <td>{{ site.testCenterFlag }}</td>
+          <td>{{ site.dateInactivated }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="pagination-container">
+      <button [disabled]="currentPage === 1" (click)="prevPage()" class="previousbutton">Previous</button>
+      <span>
+          <button *ngFor="let page of getPageNumbers()" (click)="goToPage(page)">
+              {{ page }}
+          </button>
+      </span>
+      <button [disabled]="currentPage === totalPages" (click)="nextPage()" class="nextbutton">Next</button>
+  </div>
+  </div>
+  <footer class="footer">
+    <p>Copyright © 2024 by Educational Testing Service. All rights reserved. All trademarks are the property of their respective owners.</p>
+</footer>
+</body>
+</html>
+  
